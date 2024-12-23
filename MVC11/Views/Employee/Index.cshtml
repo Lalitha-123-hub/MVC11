@@ -1,0 +1,29 @@
+﻿@using MVC11.Controllers;
+@model Employee
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>@Model.EmployeeName</td>
+    </tr>
+    <tr>
+        <th>Designation</th>
+        <td>@Model.Designation</td>
+    </tr>
+    <tr>
+        <th>Department</th>
+        <td>@Model.Department</td>
+    </tr>
+    <tr>
+        <th>Salary</th>
+        <td>@Model.Salary</td>
+    </tr>
+</table>

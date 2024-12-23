@@ -1,0 +1,31 @@
+﻿@using MVC11.Controllers
+@model List<Employee>
+@{
+    ViewBag.Title = "ShowEmployees";
+}
+
+<h2>Employees List</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Department</th>
+        <th>Salary</th>
+    </tr>
+    @{
+        foreach (Employee e in Model)
+        {
+            <tr>
+                <td>@e.Id</td>
+                <td>@e.EmployeeName</td>
+                <td>@e.Designation</td>
+                <td>@e.Department</td>
+                <td>@e.Salary</td>
+            </tr>
+        }
+    }
+
+</table>
+
+
